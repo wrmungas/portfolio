@@ -32,16 +32,20 @@
             border-radius: 10px;
             max-width: 800px;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .project-section img {
-            max-width: 100%;
+            width: 40%;
             border-radius: 5px;
         }
-        .project-section h5 {
-            margin-top: 10px;
+        .project-content {
+            width: 55%;
+            text-align: left;
         }
-        .project-section a {
-            margin-top: 10px;
+        .project-section:nth-child(even) {
+            flex-direction: row-reverse;
         }
     </style>
 </head>
@@ -58,23 +62,29 @@
         
         <div class="project-section">
             <img src="project1.jpg" alt="Project 1">
-            <h5>C Go Game (Ongoing)</h5>
-            <p>As an avid amateur Go player, and a thorough enjoyer of the C programming language, I thought I'd try my hand at combining the two.</p>
-            <a href="project1.html" class="btn btn-light">See More</a>
+            <div class="project-content">
+                <h5>C Go Game (Ongoing)</h5>
+                <p>As an avid amateur Go player, and a thorough enjoyer of the C programming language, I thought I'd try my hand at combining the two.</p>
+                <a href="project1.html" class="btn btn-light">See More</a>
+            </div>
         </div>
         
         <div class="project-section">
             <img src="project2.jpg" alt="Project 2">
-            <h5>Coffee Maker</h5>
-            <p>A full stack application that served as the semester project for my Software Engineering course. Built with React JS, Spring Boot and Hibernate.</p>
-            <a href="project2.html" class="btn btn-light">See More</a>
+            <div class="project-content">
+                <h5>Coffee Maker</h5>
+                <p>A full stack application that served as the semester project for my Software Engineering course. Built with React JS, Spring Boot and Hibernate.</p>
+                <a href="project2.html" class="btn btn-light">See More</a>
+            </div>
         </div>
 
         <div class="project-section">
             <img src="project1.jpg" alt="Project 1">
-            <h5>Space Invaders in WebGL</h5>
-            <p>Game project that served as the capstone for my Computer Graphics class. Written in JS with WebGL, can easily run with the VS Code Live Server extension.</p>
-            <a href="project1.html" class="btn btn-light">See More</a>
+            <div class="project-content">
+                <h5>Space Invaders in WebGL</h5>
+                <p>Game project that served as the capstone for my Computer Graphics class. Written in JS with WebGL, can easily run with the VS Code Live Server extension.</p>
+                <a href="project1.html" class="btn btn-light">See More</a>
+            </div>
         </div>
     </div>
 </body>
