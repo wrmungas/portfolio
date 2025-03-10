@@ -10,6 +10,20 @@
             background-color: #8B0000;
             color: white;
         }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
         .project-section {
             background-color: rgba(255, 255, 255, 0.1);
             border: 2px solid #B22222;
@@ -31,10 +45,16 @@
         }
     </style>
 </head>
+    
 <body>
-    <div class="container text-center mt-5">
-        <h1>Will Mungas</h1>
-        <p>A collection of my projects, both personal and through NCSU. </p>
+    <div class="container mt-5">
+        <div class="header">
+            <img src="profile.jpg" alt="My Picture">
+            <div>
+                <h1>Will Mungas</h1>
+                <p>Welcome! I'm Will Mungas, a computer science student at NCSU. Here are some of the projects I've worked on at school and in my personal time.</p>
+            </div>
+        </div>
         
         <div class="project-section">
             <img src="project1.jpg" alt="Project 1">
