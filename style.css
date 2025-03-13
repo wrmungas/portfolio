@@ -1,0 +1,50 @@
+body {
+    background-color: #661313;
+    color: white;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.header img {
+    width: 30%;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.header div {
+    text-align: right; /* Align text to the right */
+}
+
+.project-section {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid #661313;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1000px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-section img {
+    width: 40%;
+    border-radius: 5px;
+}
+.project-content {
+    width: 55%;
+    text-align: left;
+}
+.section-header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2); /* Darker background */
+    padding: 10px;
+    margin: 80px auto 20px auto; /* Doubled the top margin */
+    max-width: 1200 px;
+    border-radius: 10px;
+}
