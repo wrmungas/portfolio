@@ -48,3 +48,16 @@ body {
     max-width: 1200 px;
     border-radius: 10px;
 }
+
+.image-container {
+    margin-top: 20px; /* Add space above the image */
+    margin-bottom: 30px; /* Add space below the image */
+}
+
+.outlined-image {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Subtle dark outline */
+}
+
+.project-description {
+    text-align: left
+}
