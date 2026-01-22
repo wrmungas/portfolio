@@ -1,79 +1,118 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>wrm portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
     
 <body>
-    <div class="container mt-5">
-        <div class="header">
-            <img src="images/profile.jpg" alt="My Picture">
-            <div>
-                <h1>Will Mungas</h1>
-                <p>
-                    Welcome! I'm Will Mungas, a computer science student at NCSU.
-                </p>
-                <p>
-                    Here are some of the projects I've worked on at school and in my personal time.
-                </p>
-            </div>
-        </div>
+    <header>
+        <img height="400" src="images/profile.jpg" alt="A photo of me">
+        <h1>
+            <u><code>wrm: William Robert Mungas</code></u>
+        </h1>
+    </header>
+    
 
-        <div class="section-header">
+    <section class="intro">
+        <h1>About Me</h1>
+        <div class="intro-body">
+            <img src="images/c-lang.png" alt="code image">
+            <p>
+                Welcome! I'm Will Mungas, a computer science 
+                student at NCSU.
+                <br><br>
+                I got into computers when I was younger because 
+                I wanted to make games, and because I loved to 
+                understand how things work 'under the hood'.
+                <br><br>
+                Learning to program and developing an understanding 
+                of 3d graphics has been just like a huge 
+                behind-the-scenes movie special - I can see the 
+                smoke and mirrors and appreciate the cleverness 
+                behind them. With the knowledge I've acquired I 
+                can even start to implement some of these tricks 
+                myself!
+                <br><br>
+                I am currently in my final semester as a senior 
+                at NCSU. When I'm not in class, I can be found 
+                programming, playing Go, or engaging in some 
+                excellent NCSU club activities, including
+                CrossFit and skiing.
+                <br><br>
+                Check out some of my personal and school projects below!
+            </p>
+        </div>
+    </section>
+
+    <section class="project">
+        <h1>My Projects</h1>
+
+        <section>
             <h2>Ongoing</h2>
-        </div>
 
-        <div class="project-section">
-            <img src="images/portfolio.png" alt="Website-inception?">
-            <div class="project-content">
-                <h5>This Portfolio!</h5>
-                <p>NOTE: This site is currently unfinished. It is outdated and a little bit of a mess. Once I finish working on my latest C project I plan to come back and update this portfolio to add to the projects listed here and polish the look and feel of the site.</p>
-            </div>
-        </div>
+            <div class="project-container">
+                <img src="images/portfolio.png" alt="old version of this site">
 
-        <div class="project-section">
-            <img src="images/placeholder.png" alt="Go Game in C">
-            <div class="project-content">
-                <h5>WRM Utils</h5>
-                <p>A framework for application and simulation development, including support for basic 3d graphics, 2d GUI elements, reading user input, and efficient data structures.</p>
-                <a href="subpages/wrm_utils.html" class="btn btn-success">See More</a>
+                <div class="project-blurb">
+                    <h3><a href="subpages/portolio.html">This Website</a></h3>
+                    <p>
+                        This site! I am currently working on a design revamp as I 
+                        learn more about HTML and CSS. Proudly constructed by hand,
+                        no AI involved.
+                    </p>
+                </div>
             </div>
-        </div>
-        
-        <div class="project-section">
-            <img src="images/placeholder.png" alt="Go Game in C">
-            <div class="project-content">
-                <h5>Go Game in C</h5>
-                <p>As an avid amateur Go player, and a thorough enjoyer of the C programming language, I thought I'd try my hand at combining the two.</p>
-                <a href="subpages/go_game.html" class="btn btn-success">See More</a>
-            </div>
-        </div>
 
-        <div class="section-header">
+            <div class="project-container">
+                <img src="images/portfolio.png" alt="old version of this site">
+
+                <div class="project-blurb">
+                    <h3>wrm utils</h3>
+                    <p>a framework in C for 3d games and applications</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
             <h2>Completed</h2>
-        </div>
-        
-        <div class="project-section">
-            <img src="images/coffee_thumbnail.png" alt="Coffee Maker">
-            <div class="project-content">
-                <h5>Coffee Maker</h5>
-                <p>A full stack application that served as the semester project for my Software Engineering course. Built with React JS, Spring Boot and Hibernate.</p>
-                <a href="subpages/coffee_maker.html" class="btn btn-success">See More</a>
+
+            <div class="project-container">
+                <img src="images/coffee_thumbnail.png" alt="coffee maker application">
+
+                <div class="project-blurb">
+                    <h3>Coffee Maker</h3>
+                    <p>A school project to make a full-stack website for coffee ordering</p>
+                </div>
             </div>
+
+            <div class="project-container">
+                <img src="images/galaxian_thumbnail.png" alt="galaxian game">
+
+                <div class="project-blurb">
+                    <h3>Galaxian</h3>
+                    <p>Final project of my 3d graphics class: replicate the classic game Galaxian</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <footer>
+        <div>
+            <h3>Interested in hiring?:</h3>
+            <a href="subpages/resume.md">Resume</a>
         </div>
 
-        <div class="project-section">
-            <img src="images/galaxian_thumbnail.png" alt="Galaxian in WebGL">
-            <div class="project-content">
-                <h5>Galaxian in WebGL</h5>
-                <p>Game project that served as the capstone for my Computer Graphics class. Written in JS with WebGL, can easily run with the VS Code Live Server extension.</p>
-                <a href="subpages/galaxian.html" class="btn btn-success">See More</a>
-            </div>
+        <div>
+            <h3>Contact Me:</h3>
+            <p>wrmungaswork@gmail.com</p>
         </div>
-    </div>
+    </footer>
+
 </body>
+
 </html>

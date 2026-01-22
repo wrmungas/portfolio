@@ -1,63 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700');
+
 body {
-    background-color: #661313;
+    background-color: #411;
     color: white;
+    margin: 0px;
+    font-family: 'Open Sans';
 }
-.header {
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
 }
-.header img {
+
+header img {
     width: 30%;
-    border-radius: 15px;
-    margin-right: 20px;
-}
-
-.header div {
-    text-align: right; /* Align text to the right */
-}
-
-.project-section {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 2px solid #661313;
+    border-radius: 10%;
     padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    max-width: 1000px;
-    text-align: left;
+}
+
+header h1 {
+    text-align: right;
+    padding-right: 40px;
+}
+
+/* --- intro section --- */
+
+.intro {
+    background-color: #a11;
+    padding-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 40px;
+    color: #fcc;
+
+    h1 {
+        text-align: left;
+        padding-left: 40px;
+        border-bottom: solid 2px #fcc;
+    }
+}
+
+.intro-body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "img text";
+
+    img {
+        grid-area: img;
+        width: 30%;
+    }
+
+    p {
+        grid-area: text;
+        text-align: left;
+        padding: 20px;
+        font-size: medium;
+        font-weight: 500;
+    }
+}
+
+/* --- project showcase section --- */
+
+.project {
+    margin: 0px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    
+    h1 {
+        margin: 0px;
+        grid-area: heading;
+        color: #d11;
+        padding-top: 100px;
+        padding-right: 40px;
+        text-align: right;
+    }
 }
-.project-section img {
-    width: 40%;
-    border-radius: 5px;
+
+.project section {
+    h2 {
+        margin: 0px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+        color: #fdd;
+        background-color: #211;
+    }
+
+    .project-container:nth-child(even) {
+        background-color: #511;
+        flex-direction: row-reverse;
+    }
 }
-.project-content {
-    width: 55%;
-    text-align: left;
+
+.project-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    min-height: 340px;
+
+    transform: translateY(-100px);
+    opacity: 0;
+    animation: slide-up 1s forwards; 
+    animation-timeline: view(50%);
+
+    img {
+        max-height: 300px;
+        margin: 20px;
+        border-radius: 10px;
+    }
 }
-.section-header {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.2); /* Darker background */
+
+.project-blurb {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    margin: 80px auto 20px auto; /* Doubled the top margin */
-    max-width: 1200 px;
-    border-radius: 10px;
+
+    a {
+        color: #fdd;
+    }
+
+    p {
+        max-width: 400px;
+    }
 }
 
-.image-container {
-    margin-top: 20px; /* Add space above the image */
-    margin-bottom: 30px; /* Add space below the image */
+
+
+footer {
+    background-color: #311;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3 {
+        color: #711;
+    }
+
+    a {
+        color: #919;
+    }
+
+    p {
+        color: #911;
+    }
 }
 
-.outlined-image {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Subtle dark outline */
-}
+/* --- Fancier things --- */
 
-.project-description {
-    text-align: left
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(100px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
