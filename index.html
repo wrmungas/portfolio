@@ -10,33 +10,84 @@
 </head>
     
 <body>
-    <header>
-        <img height="400" src="images/profile.jpg" alt="A photo of me">
-        <h1>
-            <u><code>wrm: William Robert Mungas</code></u>
-        </h1>
-    </header>
-    
+    <!-- First handle the background coding image -->
 
-    <section class="intro">
-        <h1>About Me</h1>
-        <div class="intro-body">
-            <img src="images/c-lang.png" alt="code image">
+    <img id="background" src="/images/background-code.jpg" alt="coding background image">
+   
+    <!-- Place the header, navigation, and footer in a fixed sidebar -->
+    <aside>
+        <header>
+            <img src="images/profile.jpg" alt="A photo of me">
+
+            <div id="#header">
+                <h1>
+                    <code>wrm: william r mungas</code>
+                </h1>
+
+                <p>
+                    My name is Will - welcome to my site! 
+                    I'm a student in computer science at NCSU, 
+                    and I like programming, playing go, and working out.
+                </p>
+            </div>
+        </header>
+
+        <nav>
+            <h1><code>Sections</code></h1>
+            <ul>
+                <li>
+                    <a href="#title">Title</a>
+                </li>
+                <li>
+                    <a href="#intro">Intro</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+            </ul>
+        </nav>
+
+        <footer>
+            <h1><code>Additional</code></h1>
+            <ul>
+                <li>
+                    Hiring: <a href="subpages/resume.html">resume</a>
+                </li>
+                <li>
+                    Contact: wrmungaswork@gmail.com
+                </li>
+            </ul>
+        </footer>
+    </aside>
+
+    <!-- main content goes at the right-hand side -->
+    <main>
+        <div class="gap"></div>
+
+        <section id="title">
+            <h1>About Me</h1>
+        </section>
+
+        <section id="intro">
             <p>
                 Welcome! I'm Will Mungas, a computer science 
-                student at NCSU.
+                student at NC State University.
                 <br><br>
                 I got into computers when I was younger because 
                 I wanted to make games, and because I loved to 
                 understand how things work 'under the hood'.
                 <br><br>
                 Learning to program and developing an understanding 
-                of 3d graphics has been just like a huge 
-                behind-the-scenes movie special - I can see the 
-                smoke and mirrors and appreciate the cleverness 
-                behind them. With the knowledge I've acquired I 
-                can even start to implement some of these tricks 
-                myself!
+                of 3d graphics has been like a huge 
+                behind-the-scenes movie special. Now when I look at
+                software I can see past the smoke and mirrors and
+                appreciate the cleverness behind features, effects,
+                and design choices. Not only that, but I can <em>use</em>
+                these in my own projects to hopefully deliver that
+                same digital magic to other people!
                 <br><br>
                 I am currently in my final semester as a senior 
                 at NCSU. When I'm not in class, I can be found 
@@ -46,73 +97,119 @@
                 <br><br>
                 Check out some of my personal and school projects below!
             </p>
-        </div>
-    </section>
+        </section>
 
-    <section class="project">
-        <h1>My Projects</h1>
 
-        <section>
-            <h2>Ongoing</h2>
+        <section id="skills">
+            <h1>Skills</h1>
 
-            <div class="project-container">
-                <img src="images/portfolio.png" alt="old version of this site">
+            <div>
+                <div class="skills-icons">
+                    <div>
+                        <img src="/images/c-logo.png" alt="c language logo">
+                        <img src="/images/bash-logo.png" alt="bash language logo">
+                        <img src="/images/react-logo.png" alt="react framework logo">
+                    </div>
 
-                <div class="project-blurb">
-                    <h3><a href="subpages/portolio.html">This Website</a></h3>
+                    <div>
+                        <img src="/images/git-logo.png" alt="git logo">
+                        <img src="/images/opengl-logo.png" alt="opengl logo">
+                    </div>
+                </div>
+                
+                <div class="skills-content">
                     <p>
-                        This site! I am currently working on a design revamp as I 
-                        learn more about HTML and CSS. Proudly constructed by hand,
-                        no AI involved.
+                        Through a combination of personal and school projects, I have learned:
+                    </p>
+
+                    <ul>
+                        <li>Application programming in Java</li>
+                        <li>Systems and application programming in C (my beloved)</li>
+                        <li>Full-stack application development with React and MySQL</li>
+                        <li>Command-line proficiency and scripting on Linux</li>
+                        <li>Source control with Git</li>
+                        <li>3d graphics and game design</li>
+                    </ul>
+
+                    <p>
+                        Below is a collection of these projects. Clicking on the titles will
+                        take you to an overview page with more details about each one.
                     </p>
                 </div>
             </div>
-
-            <div class="project-container">
-                <img src="images/portfolio.png" alt="old version of this site">
-
-                <div class="project-blurb">
-                    <h3>wrm utils</h3>
-                    <p>a framework in C for 3d games and applications</p>
-                </div>
-            </div>
         </section>
 
-        <section>
+        <div class="gap"></div>
+
+        <section id="projects">
+            <h1>Projects</h1>
+
+            <h2>Ongoing</h2>
+
+            <div class="project-section">
+                <div class="project-container">
+                    <img src="images/portfolio.png" alt="old version of this site">
+
+                    <div class="project-info">
+                        <h3><a href="subpages/portolio.html">This Website</a></h3>
+                        <p>
+                            This site! I am currently working on a design revamp as I 
+                            learn more about HTML and CSS. Proudly constructed by hand,
+                            no AI involved.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <img src="/images/placeholder.png">
+
+                    <div class="project-info">
+                        <h3>wrm utils</h3>
+                        <p>
+                            A framework I wrote in C for 3d games and applications. Built on
+                            top of SDL with OpenGL graphics support and FreeType2 for font 
+                            loading, I am finalizing the first version and working on a demo 
+                            project to show it off. You can check out this project at my 
+                            Github <a href="https://github.com/wrmungas/wrm-utils">here</a>!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <h2>Completed</h2>
 
-            <div class="project-container">
-                <img src="images/coffee_thumbnail.png" alt="coffee maker application">
+            <div class="project-section">
+                <div class="project-container">
+                    <img src="images/coffee_thumbnail.png" alt="coffee maker application">
 
-                <div class="project-blurb">
-                    <h3>Coffee Maker</h3>
-                    <p>A school project to make a full-stack website for coffee ordering</p>
+                    <div class="project-info">
+                        <h3>Coffee Maker</h3>
+                        <p>
+                            A school project to make a full-stack website for coffee ordering.
+                            Built using Java, React JS, and MySQL, using Hibernate and Spring 
+                            Boot.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <img src="images/galaxian_thumbnail.png" alt="galaxian game">
+
+                    <div class="project-info">
+                        <h3>Galaxian</h3>
+                        <p>
+                            Final project of my 3d graphics class: replicate the classic game Galaxian!
+                            Built in JavaScript using WebGL, with hand-crafted hardcoded models and 
+                            effects.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-container">
-                <img src="images/galaxian_thumbnail.png" alt="galaxian game">
-
-                <div class="project-blurb">
-                    <h3>Galaxian</h3>
-                    <p>Final project of my 3d graphics class: replicate the classic game Galaxian</p>
-                </div>
-            </div>
         </section>
-    </section>
-    
-    <footer>
-        <div>
-            <h3>Interested in hiring?:</h3>
-            <a href="subpages/resume.md">Resume</a>
-        </div>
 
-        <div>
-            <h3>Contact Me:</h3>
-            <p>wrmungaswork@gmail.com</p>
-        </div>
-    </footer>
-
+        <div id="filler"></div>
+    </main>
 </body>
 
 </html>
